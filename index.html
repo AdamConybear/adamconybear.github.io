@@ -7,12 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="css/main.css">
+	<!-- This is the icon on the tab -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Adam Conybear</title>
   </head>
+  <!-- <style>
+	  body  {
+		
+		background-color: #fdf5e6;
+		}
+  </style> -->
   <body>
 	  <!-- Creating navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 		<div class="navbar-header">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="nav_content" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -46,7 +54,7 @@
 		<!-- About -->
 		<div class="about">
 			<h2>About Me</h2>
-			<p>information about me</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, aliquam quisquam. Dolorem corrupti aperiam sit unde, vitae quas iste nulla. Delectus deserunt, fugiat corrupti esse fuga porro reiciendis excepturi expedita.</p>
 		</div>
 	
 	
@@ -54,13 +62,32 @@
 		<div class="projects">
 			<h2>Projects</h2>
 			<div class="row">
-				<!-- each project will be an artivle tag -->
+				<article class="col-lg-6 col-md-6 col-sm-12">
+					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
+					<h3>Project 1</h3>
+					<p>small Description 1</p>
+				</article>
+				<article class="col-lg-6 col-md-6 col-sm-12">
+					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
+					<h3>Project 2</h3>
+					<p>small Description 2</p>
+				</article>
+				<article class="col-lg-6 col-md-6 col-sm-12">
+					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
+					<h3>Project 3</h3>
+					<p>small Description 3</p>
+				</article>
+				<article class="col-lg-6 col-md-6 col-sm-12">
+					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
+					<h3>Project 4</h3>
+					<p>small Description 4</p>
+				</article>
 			</div>
 	
 		</div>
 		<!-- Contact -->
 		<div class="contact">
-
+			<h2>Contact</h2>
 		</div>
 	</div>
 	
@@ -84,7 +111,7 @@
 			if($(window).width() > 640) {
 				$("#typingAnimation").typed({
 				  strings: ["Computer Science student","Engineer", "Aspiring entrepreneur", "Passionately curious", "Thinker & Do-er", "Soccer fanatic", "Film aficionado", "Bookworm", "Ambitious philomath"],
-				  typeSpeed: 50,
+				  typeSpeed: 40,
 				  backDelay: 1000,
 				  loop: true,
 				  loopCount: false,
