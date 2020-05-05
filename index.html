@@ -8,14 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>AC</title>
+    <title>Adam Conybear</title>
   </head>
   <body>
+	  <!-- Creating navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="navbar-header">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="nav_content" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<a href="#" class="navbar-brand">AC</a>
 		</div>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="nav_content">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="#">About Me</a>
@@ -23,22 +27,76 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">Projects</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
 			</ul>
 		</div>
-
 	</nav>
+	<div class="container">
+		<!-- Home -->
+		<div>
+			<h1>Adam Conybear</h1>
 
-    <h1>Adam Conybear</h1>
+			<!-- <div class="typing">
+				<span id="typingAnimation"></span>
+			</div> -->
+		</div>
+	
+		<!-- About -->
+		<div class="about">
+			<h2>About Me</h2>
+			<p>information about me</p>
+		</div>
+	
+	
+		<!-- Projects -->
+		<div class="projects">
+			<h2>Projects</h2>
+			<div class="row">
+				<!-- each project will be an artivle tag -->
+			</div>
+	
+		</div>
+		<!-- Contact -->
+		<div class="contact">
+
+		</div>
+	</div>
+	
 
 
 
 
+	
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- Typing animation script -->
+	<script src="js/typed.js"></script>
+	<script>
+		$(function(){
+			if($(window).width() > 640) {
+				$("#typingAnimation").typed({
+				  strings: ["Computer Science student","Engineer", "Aspiring entrepreneur", "Passionately curious", "Thinker & Do-er", "Soccer fanatic", "Film aficionado", "Bookworm", "Ambitious philomath"],
+				  typeSpeed: 50,
+				  backDelay: 1000,
+				  loop: true,
+				  loopCount: false,
+				  callback: function(){}
+				});
+			} else {
+				  $(".typing").hide();
+				  $("#typed-cursor").hide();
+				  $("#typeAnimation").hide();
+			}
+		});
+	</script>
+
   </body>
 </html>
