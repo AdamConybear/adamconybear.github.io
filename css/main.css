@@ -91,6 +91,9 @@ h1 {
 .projects {
     padding-top: 50px;
 }
+.row article {
+    border: 2px solid black ;
+}
 
 .contact {
     padding-top: 50px;
