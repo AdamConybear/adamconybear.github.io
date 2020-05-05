@@ -38,6 +38,28 @@ h1 {
     color: #f3f3f3;
 }
 
+#typed-cursor {
+    opacity: 1;
+    color: black;
+    font-weight: 100;
+    animation: blink 0.9s infinite;
+}
+  
+@keyframes blink {
+    0% {
+    opacity: 1;
+    }
+
+    50% {
+    opacity: 0;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+  
+
 .resume-home {
     text-align: center;
     padding-top: 10px;
