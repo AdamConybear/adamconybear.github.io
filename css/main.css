@@ -14,6 +14,7 @@ h1 {
 
 #home-back {
     background: url("../images/temp_background.jpg") no-repeat center center;
+    /* background-color: purple; */
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -29,7 +30,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: rgba(123, 123, 123, 0.2);
+    background-color: rgba(123, 123, 123, 0.1);
     border-radius: 10px;
     padding: 5px;
 }
@@ -91,19 +92,139 @@ h1 {
 .projects {
     padding-top: 50px;
 }
-.row article {
-    border: 2px solid black ;
+.row article img {
+    /* border: 2px solid black ; */
+    width:450px;
+    height: 300px;
+
 }
 
 .contact {
     padding-top: 50px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
 .footer {
-    color: #f3f3f3;
+    color: black;
+    text-align: center;
+    background-color: #565d61;
     font-size: 15px;
     padding: 15px;
     margin-top: 40px;
-    text-align: center;
     margin-bottom: 0;
 }
+
+/* Image */
+/* .image {
+    border-radius: 0.35em;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image:before {
+    transition: opacity 0.2s ease-in-out;
+    background: url("images/overlay.png");
+    border-radius: 0.35em;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.image.thumb {
+    text-align: center;
+}
+
+    .image.thumb:after {
+        transition: opacity 0.2s ease-in-out;
+        border-radius: 0.35em;
+        border: solid 3px rgba(255, 255, 255, 0.5);
+        color: #fff;
+        content: 'View';
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: 400;
+        left: 50%;
+        line-height: 2.25em;
+        margin: -1.25em 0 0 -3em;
+        opacity: 0;
+        padding: 0 1.5em;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        top: 50%;
+        white-space: nowrap;
+    }
+
+    .image.thumb:hover:after {
+        opacity: 1.0;
+    }
+
+    .image.thumb:hover:before {
+        background: url("images/overlay.png"), url("images/overlay.png");
+        opacity: 1.0;
+    }
+
+.image img {
+    border-radius: 0.35em;
+    display: block;
+}
+
+.image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+.image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+}
+
+.image.left, .image.right {
+    max-width: 40%;
+}
+
+    .image.left img, .image.right img {
+        width: 100%;
+    }
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+    .image.fit img {
+        width: 100%;
+    }
+
+.work-item {
+    margin: 0 0 2em 0;
+}
+
+    .work-item .image {
+        margin: 0 0 1.5em 0;
+    }
+
+    .work-item h3 {
+        font-size: 1em;
+        margin: 0 0 0.5em 0;
+    }
+
+    .work-item p {
+        font-size: 0.8em;
+        line-height: 1.5em;
+        margin: 0;
+    } */
