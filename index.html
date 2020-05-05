@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- This is the icon on the tab -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -20,7 +23,7 @@
   </style> -->
   <body>
 	  <!-- Creating navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
 		<div class="navbar-header">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="nav_content" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -41,22 +44,34 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="container">
+	<div class="main">
 		<!-- Home -->
-		<div>
+		<div id="home-back">
 			<h1>Adam Conybear</h1>
 
-			<!-- <div class="typing">
+			<div class="typing">
 				<span id="typingAnimation"></span>
-			</div> -->
+			</div>
+
+			<div class="resume-home">
+				<button type="button" class="btn btn-outline-dark">View Resume</button>
+			</div>
+
+			<div class="logos">
+				<a href="http://www.github.com/AdamConybear"><i class="fa fa-github"></i></a> &nbsp;
+				<a href="http://www.linkedin.com/in/AdamConybear/"><i class="fa fa-linkedin indv"></i></a>
+			</div>
+
+			<!-- Maybe add logos (github and linkedin) here? -->
 		</div>
+	</div>
 	
+	<div class="container">
 		<!-- About -->
 		<div class="about">
 			<h2>About Me</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, aliquam quisquam. Dolorem corrupti aperiam sit unde, vitae quas iste nulla. Delectus deserunt, fugiat corrupti esse fuga porro reiciendis excepturi expedita.</p>
 		</div>
-	
 	
 		<!-- Projects -->
 		<div class="projects">
@@ -64,22 +79,22 @@
 			<div class="row">
 				<article class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
-					<h3>Project 1</h3>
+					<h4>Project 1</h4>
 					<p>small Description 1</p>
 				</article>
 				<article class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
-					<h3>Project 2</h3>
+					<h4>Project 2</h4>
 					<p>small Description 2</p>
 				</article>
 				<article class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
-					<h3>Project 3</h3>
+					<h4>Project 3</h4>
 					<p>small Description 3</p>
 				</article>
 				<article class="col-lg-6 col-md-6 col-sm-12">
 					<a href="#" class="image fit thumb"><img src="#" alt="" /></a>
-					<h3>Project 4</h3>
+					<h4>Project 4</h4>
 					<p>small Description 4</p>
 				</article>
 			</div>
@@ -88,7 +103,20 @@
 		<!-- Contact -->
 		<div class="contact">
 			<h2>Contact</h2>
+			<p><i class="fa fa-envelope contact-icon"></i> <a href="aconybear22@gmail.com">aconybear22@gmail.com</a></p>
 		</div>
+
+
+		<!-- Footer -->
+		<!-- <div class="navbar navbar-default footer">
+			<div class="container">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<p>Code & Design by Adam</p> 
+					maybe git and linkedin logos?
+				</div>
+			</div>
+		</div> -->
 	</div>
 	
 

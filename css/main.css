@@ -2,4 +2,83 @@ body  {
     background-color: #fdf5e6;
 }
 
+h1 {
+    text-align: center;
+    font-size: 60px;
+    /* font-family: 'Permanent Marker'; */
+}
 
+.navbar-default {
+    background: none;
+}
+
+#home-back {
+    background: url("../images/temp_background.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.typing {
+    max-width: 400px;
+    height: auto;
+    font-size: 30px;
+    /* font-family: 'Permanent Marker'; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(123, 123, 123, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#typingAnimation {
+    color: #f3f3f3;
+}
+
+.resume-home {
+    text-align: center;
+    padding-top: 10px;
+    /* border: 2px solid black */
+
+}
+
+/* .contact-icon {
+    width: 10px;
+    padding-right: 25px;
+} */
+
+.logos {
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+.logos a, .logos a:link, .logos a:visited{
+    color:#787d81;
+}
+.logos a:active {
+    color:#565d61;
+}
+
+.about {
+    padding-top: 50px;
+}
+
+.projects {
+    padding-top: 50px;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.footer {
+    color: #f3f3f3;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
