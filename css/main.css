@@ -26,11 +26,10 @@ h1 {
 }
 
 .typing {
-    min-width: 300px;
+    /* min-width: 250px; */
     max-width: 400px;
     height: auto;
     font-size: 30px;
-    /* font-family: 'Permanent Marker'; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
