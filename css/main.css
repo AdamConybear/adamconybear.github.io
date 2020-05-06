@@ -26,6 +26,7 @@ h1 {
 }
 
 .typing {
+    min-width: 300px;
     max-width: 400px;
     height: auto;
     font-size: 30px;
