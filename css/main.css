@@ -104,13 +104,57 @@ h1 {
 .projects {
     padding-top: 50px;
 }
-.row article {
+/* .row article {
     /* border: 2px solid black ; */
     /* width:450px;
     height: 300px; */
-    padding: 20px;
+    /* padding: 20px; */
 
     
+/* }  */
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    /* background-color: #fffdd0; */
+    background-color: #ffcba4;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.card-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+img {
+    width:450px;
+    height:250px;
+}
+
+.project-card{
+    margin-top:20px;
+}
+.project-card .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    
+}
+.project-card .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+}
+.project-card h5{
+    font-weight:600;
+}
+.project-card p{
+    font-size:14px;
+    font-weight:300;
 }
 
 .project-icons {
@@ -127,9 +171,13 @@ h1 {
 
 .contact {
     padding-top: 50px;
+    font-size: 20px;
 }
 
-
+.contact-icon {
+    width: 10px;
+    padding-right: 25px;
+}
 
 .footer {
     color: #fdf5e6;
@@ -141,58 +189,5 @@ h1 {
     margin-bottom: 0;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */  
-    /* text-align: center; */
-    background-color: #fffdd0;
-    /* box-sizing: border-box; */
-    /* padding: 20px; */
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-}
-.card-title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-img {
-    width:450px;
-    height:250px;
-}
-
-.contact {
-    font-size: 20px;
-}
-
-.contact-icon {
-    width: 10px;
-    padding-right: 25px;
-}
 
 /* Testing */
-.project-card{
-    margin-top:20px;
-}
-.project-card .card-img-block {
-    width: 91%;
-    margin: 0 auto;
-    position: relative;
-    top: -20px;
-    
-}
-.project-card .card-img-block img{
-    border-radius:5px;
-    box-shadow:0 0 10px rgba(0,0,0,0.63);
-}
-.project-card h5{
-    color:#4E5E30;
-    font-weight:600;
-}
-.project-card p{
-    font-size:14px;
-    font-weight:300;
-}
