@@ -90,7 +90,7 @@ h1 {
 .content {
     padding-top: 20px;
     padding-bottom: 40px;
-    max-width: 700px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -111,6 +111,17 @@ h1 {
     padding: 20px;
 
     
+}
+
+.project-icons {
+    font-size: 20px;
+    text-align: center;
+}
+.project-icons a, .project-icons a:link, .project-icons a:visited{
+    color:#16334A;
+}
+.project-icons a:active {
+    color:#565d61;
 }
 
 
@@ -160,4 +171,28 @@ img {
 .contact-icon {
     width: 10px;
     padding-right: 25px;
+}
+
+/* Testing */
+.project-card{
+    margin-top:20px;
+}
+.project-card .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    
+}
+.project-card .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+}
+.project-card h5{
+    color:#4E5E30;
+    font-weight:600;
+}
+.project-card p{
+    font-size:14px;
+    font-weight:300;
 }
