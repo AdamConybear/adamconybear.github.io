@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body  {
     background-color: #fdf5e6;
     font-family: 'Ubuntu';
@@ -103,36 +107,23 @@ h2  {
 
 .about {
     padding-top: 50px;
-    /* padding: 40px 15px; */
-    /* height: auto;
-    margin: auto; */
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+
+    /* added to make full screen */
+    /* margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle; */
 }
 .about .row .headshot {
     text-align: center;
 }
 
-/* #about-me {
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* display: table-cell;
-    vertical-align: middle; */
-    /* max-width: 900px;
-    margin-left: auto;
-    margin-right: auto; */
-    
-/* } */
-
-/* .headshot {
-    top: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 300px;
-    border-radius: 50%;
-} */
 .headshot {
     /* padding-right:20px; */
     padding-bottom: 20px;
@@ -149,15 +140,8 @@ h2  {
 
 .projects {
     padding-top: 60px;
-}
-/* .row article {
-    /* border: 2px solid black ; */
-    /* width:450px;
-    height: 300px; */
-    /* padding: 20px; */
-
     
-/* }  */
+}
 
 
 .card {
@@ -219,6 +203,15 @@ img {
 .contact {
     padding-top: 50px;
     font-size: 20px;
+
+    /* added to make full screen */
+    /* margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle; */
 }
 
 .contact-icon {
