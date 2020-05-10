@@ -1,6 +1,6 @@
 body  {
     background-color: #fdf5e6;
-    font-family: 'Playfair Display';
+    font-family: 'Ubuntu';
     color: #16334A;
 }
 
@@ -24,9 +24,13 @@ h1 {
     display: table-cell;
     vertical-align: middle;
 }
+h2  {
+    font-size: 24px;
+}
 
 .typing {
     /* min-width: 250px; */
+    font-family: 'Oswald';
     max-width: 400px;
     height: auto;
     font-size: 30px;
@@ -87,7 +91,7 @@ h1 {
     color:#565d61;
 }
 
-.content {
+/* .content {
     padding-top: 20px;
     padding-bottom: 40px;
     max-width: 900px;
@@ -95,14 +99,56 @@ h1 {
     margin-right: auto;
     text-align: left;
     line-height: 30px;
-  }
+} */
 
 .about {
     padding-top: 50px;
+    /* padding: 40px 15px; */
+    /* height: auto;
+    margin: auto; */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about .row .headshot {
+    text-align: center;
 }
 
+/* #about-me {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* display: table-cell;
+    vertical-align: middle; */
+    /* max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; */
+    
+/* } */
+
+/* .headshot {
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+    border-radius: 50%;
+} */
+.headshot {
+    /* padding-right:20px; */
+    padding-bottom: 20px;
+}
+.headshot img {
+    border-radius: 50%;
+    max-width: 250px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
 .projects {
-    padding-top: 50px;
+    padding-top: 60px;
 }
 /* .row article {
     /* border: 2px solid black ; */
@@ -120,6 +166,7 @@ h1 {
     border-radius: 5px;
     /* background-color: #fffdd0; */
     background-color: #ffcba4;
+    /* background-color: #2d0c2d; */
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
