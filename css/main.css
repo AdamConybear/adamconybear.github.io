@@ -107,23 +107,54 @@ h2  {
 } */
 
 .about {
-    padding-top: 50px;
+    /* padding-top: 150px;
     max-width: 900px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 
     /* added to make full screen */
-    /* margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     background-size: cover;
     height: 100vh;
     width: 100vw;
     display: table-cell;
-    vertical-align: middle; */
+    vertical-align: middle;
 }
 .about .row .headshot {
     text-align: center;
 }
+
+#about-card {
+    background-color: hsl(10, 6%, 20%);
+    color: white;
+    /* font-family: 'Oswald' ; */
+    font-size: 12px;
+    border: 0;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about-card .card-header {
+    background-color: #D8D8D8;
+    padding: .4rem 1.25rem;
+    /* border:1px solid #D8D8D8; */
+}
+.about-question {
+    font-size: 15.5px;
+}
+.about-answer {
+    color: #F9E5D4;
+    font-size: 15.5px;
+}
+
+
+
 
 .headshot {
     /* padding-right:20px; */
@@ -140,23 +171,20 @@ h2  {
 
 
 .projects {
-    padding-top: 60px;
+    padding-top: 50px;
     
 }
 
 
-.card {
+/* .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    /* background-color: #ffcba4; */
-    /* background: url("../images/temp_background.jpg") ; */
-    /* background-color: #F9BC78   ; */
     background-color: #F9CAA5  ;
-}
-.card:hover {
+} */
+/* .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-}
+} */
 .card-title {
     text-align: center;
     font-size: 18px;
@@ -170,7 +198,14 @@ img {
 
 .project-card{
     margin-top:20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #F9CAA5  ;
     
+}
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 .project-card .card-img-block {
     width: 91%;
