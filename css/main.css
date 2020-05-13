@@ -107,19 +107,22 @@ h2  {
 } */
 
 .about {
-    /* padding-top: 150px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto; */
-
-    /* added to make full screen */
+    /* padding-top: 100px; */
+    /* max-width: 900px; */
     margin-left: auto;
     margin-right: auto;
-    background-size: cover;
-    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 130px;
+
+
+    /* added to make full screen */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* background-size: cover; */
+    /* height: 100vh;
     width: 100vw;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle; */
 }
 .about .row .headshot {
     text-align: center;
