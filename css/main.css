@@ -3,16 +3,21 @@ html {
 }
 
 body  {
-    background-color: #fdf5e6;
+    /* background-color: #fdf5e6; */
+    background-color: #474b4f;
+    /* background-color: #A0A0A0; */
     font-family: 'Ubuntu';
-    color: #16334A;
+    /* color: #16334A; */
+    /* color: #61892f; */
+    color: white;
 }
 
 h1 {
     text-align: center;
     font-size: 60px;
-    /* color: #16334A; */
-    font-weight: bold;
+    /* color: #61892f; */
+    color:   #86c232;
+    font-weight: bold; 
 }
 
 .navbar-default {
@@ -21,8 +26,8 @@ h1 {
 
 
 #home-back {
-    background: url("../images/temp_background.jpg") no-repeat center center;
-    /* background-color: teal; */
+    /* background: url("../images/temp_background.jpg") no-repeat center center; */
+    background-color: #222629;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -30,7 +35,7 @@ h1 {
     vertical-align: middle;
 }
 h2  {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .typing {
@@ -48,12 +53,14 @@ h2  {
 }
 
 #typingAnimation {
-    color: #fdf5e6;
+    /* color: #fdf5e6; */
+    color: white;
 }
 
 #typed-cursor {
     opacity: 1;
-    color: #16334A;
+    /* color: #16334A; */
+    color: #86c232;
     font-weight: 100;
     animation: blink 0.9s infinite;
 }
@@ -90,10 +97,10 @@ h2  {
     text-align: center;
 }
 .logos a, .logos a:link, .logos a:visited{
-    color:#16334A;
+    color:#86c232;
 }
 .logos a:active {
-    color:#565d61;
+    color:#61892f;
 }
 
 /* .content {
@@ -141,7 +148,8 @@ h2  {
     font-size: 15.5px;
 }
 .about-answer {
-    color: #F9E5D4;
+    /* color: #F9E5D4; */
+    color: #61892f;
     font-size: 15.5px;
     padding-left: 20px;
 }
@@ -165,6 +173,7 @@ h2  {
 
 .projects {
     padding-top: 50px;
+    text-align: center;
     
 }
 
@@ -191,14 +200,16 @@ img {
 
 .project-card{
     margin-top:20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(255,255,255,0.1);
     transition: 0.3s;
     border-radius: 5px;
-    background-color: #F9CAA5  ;
+    /* background-color: #F9CAA5; */
+    background-color: #D8D8D8;
+    color: #222629;
     
 }
 .project-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.5);
 }
 .project-card .card-img-block {
     width: 91%;
@@ -231,9 +242,12 @@ img {
 }
 
 
+
 .contact {
-    padding-top: 50px;
+    padding-top: 100px;
     font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 
     /* added to make full screen */
     /* margin-left: auto;
@@ -251,13 +265,21 @@ img {
 }
 
 .footer {
-    color: #fdf5e6;
+    color: #86c232;
     text-align: center;
-    background-color: #16334A;
+    background-color: #222629;
     font-size: 15px;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 8px;
+    margin-top: 30px;
     margin-bottom: 0;
+}
+
+.initials {
+    justify-content: center;
+}
+.initials img {
+    width:50px;
+    height: 50px;
 }
 
 
