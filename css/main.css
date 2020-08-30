@@ -301,13 +301,3 @@ img {
 
 
 /* Testing */
-
-
-.df-messenger {
---df-messenger-bot-message: #86c232;
---df-messenger-button-titlebar-color: black;
---df-messenger-chat-background-color: #fafafa;
---df-messenger-font-color: white;
---df-messenger-send-icon: #86c232;
---df-messenger-user-message: #61892f;
-}
