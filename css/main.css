@@ -299,5 +299,12 @@ img {
     height: 50px;
 }
 
+/* Doesn't show chatbot if screen width < 640px */
+@media only screen and (max-width: 640px) {
+    #chatbot {
+        display: none;
+    }
+}
+
 
 /* Testing */
