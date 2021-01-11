@@ -18,20 +18,24 @@
 	<style>
 		df-messenger {
 		 --df-messenger-bot-message: #86c232;
-		 --df-messenger-button-titlebar-color: black;
+		 --df-messenger-button-titlebar-color: #181818;
 		 --df-messenger-chat-background-color: #fafafa;
 		 --df-messenger-font-color: white;
 		 --df-messenger-send-icon: #86c232;
 		 --df-messenger-user-message: #61892f;
 		}
 	</style>
+		
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">	 -->
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,46 +47,118 @@
 
   <body>
 	  <!-- Creating navbar -->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
-		<div class="navbar-header">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="nav_content" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+
+	  
+	  <!-- <a href="#" class="navbar-brand" style="color:#86c232; font-weight: bold;">AC</a> -->
+	<nav class="navbar fixed-top navbar-expand-md navbar-light bg-transparent" id="og-nav">
+		<div class="navbar-header custom-nav-header">
+				
+			<a class="header-icon navbar-brand" href="#home"><img src="./images/header_icon.png" alt=""></a>
+
+			<button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="nav_content" aria-expanded="false" aria-label="Toggle navigation">
+				
+				<div class="animated-hamburger"><span></span><span></span><span></span><span></span></div>
 			</button>
-			<!-- <a href="#" class="navbar-brand" style="color:#86c232; font-weight: bold;">AC</a> -->
-			<a class="header-icon" href=""><img src="./images/header_icon.png" alt=""></a>
 		</div>
 		<div class="collapse navbar-collapse" id="nav_content">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
+			<ul class="navbar-nav float-right text-right pr-3">
+				<li class="nav-item custom-nav-item">
+					<a class="nav-link" href="#home" style="color:#86c232">Home</a>
+				</li>
+				<li class="nav-item custom-nav-item">
 					<a class="nav-link" href="#about-me" style="color:#86c232">About Me</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item custom-nav-item">
 					<a class="nav-link" href="#proj" style="color:#86c232">Projects</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item custom-nav-item">
 					<a class="nav-link" href="#cont" style="color:#86c232">Contact</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-	<div class="main">
-		<!-- Home -->
-		<div id="home-back">
-			<h1>Adam Conybear</h1>
-			<div class="typing">
-				<span id="typingAnimation"></span>
-			</div>
 
-			<div class="resume-home">
-				<a href="./ConybearAdam_Resume.pdf"><button type="button" class="btn btn-outline-light">View Resume</button></a>
-			</div>
+	<div id="nav-bar">
+		<a class="header-icon" href="#home">
+			<img 
+				style="margin-left: auto;margin-right: auto;display: flex;" 
+				src="./images/header_icon.png" alt=""
+			>
+			<!-- <img 
+				style="margin-left: auto;margin-right: auto;display: flex;" 
+				src="./images/newInitials.png" alt=""
+			> -->
+		
+			
+				
 
-			<div class="logos">
-				<a href="http://www.github.com/AdamConybear"><i class="fa fa-github"></i></a> &nbsp;
+				
+	
+				
+		</a>
+		<nav class="en" id="nav-bar-nav">
+			<a href="#home" class="icon-nav active">
+				<i class="fa fa-home"></i>
+				<b>Home</b>
+			</a>
+			<a href="#about-me" class="icon-nav">
+				<i class="fa fa-user"></i>
+				<b>About</b>
+			</a>
+			<a href="#proj" class="icon-nav">
+				<i class="fa fa-desktop"></i>
+				<b>Projects</b>
+			</a>
+			<a href="#cont" class="icon-nav">
+				<i class="fa fa-envelope"></i>
+				<b>Contact</b>				
+			</a>
+		</nav>
+		<ul>
+			<li>
+				<a href="http://www.github.com/AdamConybear"><i class="fa fa-github"></i></a>
+			</li>
+			<li>
 				<a href="http://www.linkedin.com/in/AdamConybear/"><i class="fa fa-linkedin indv"></i></a>
-			</div>
+			</li>
+			<li>
+				<a href="./ConybearAdam_Resume.pdf">
+					<i class="fa fa-file"></i>					
+				</a>
+			</li>
+		</ul>
 
-			<!-- Maybe add logos (github and linkedin) here? -->
+	</div>
+
+	</div>
+	<div class="main" id="home">
+		<!-- Home -->
+		<div class="home-content">
+			<div style="display: inline-block;text-align: center;margin-left: 10%;">
+				<div class="home-name first">
+					<span class="letter">H</span>
+					<span class="letter">i</span>
+					<span class="letter">,</span>
+				</div>
+				<!-- <div class="home-name first jiggle">Hi,</div> -->
+				<div class="home-name first">
+					<span class="letter">I</span>
+					<span class="letter">'</span>
+					<span class="letter">m</span>&nbsp
+					<span class="letter">A</span>
+					<span class="letter">d</span>
+					<span class="letter">a</span>
+					<span class="letter">m</span>
+				</div>
+				<!-- <div class="home-name last">Conybear</div> -->
+				<!-- <h1>Adam Conybear</h1> -->
+				<!-- <div class="typing">
+					<span id="typingAnimation"></span>
+				</div> -->
+				<div style="display:flex;margin-right: auto;">
+					<span class="text-muted type-text"  id="typingAnimation"></span>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -90,152 +166,326 @@
 		<div>
 			<!-- About -->
 			<div class="about" id="about-me">
-				<h2 style="font-weight: bolder; text-align: center; margin-bottom: 40px;">About Me</h2>
-				<div class="row">
-					<div class="col-md-8 col-sm-12 card" id="about-card">
-						<div class="card-header"></div>
-						<div class="card-body">
-							<div class="about-question">> Adam.location</div>
-							<p class="about-answer">=> "Orlando, FL"</p>
-							<div class="about-question">> Adam.college</div>
-							<p class="about-answer">=> "University of Florida"</p>
-							<div class="about-question">> Adam.major</div>
-							<p class="about-answer">=> "Computer Science Engineering"</p>
-							<div class="about-question">> Adam.hobbies</div>
-							<p class="about-answer">=> ["Soccer",&ensp;"Reading",&ensp;"Magic",&ensp;"Running",&ensp;"Programming"]</p>
-							<div class="about-question">> Adam.skills</div>
-							<p class="about-answer">=> ["Java",&ensp;"C++",&ensp;"JavaScript",&ensp;"HTML/CSS"]</p>
-							<div class="about-question">> Adam.involvement</div>
-							<div class="about-answer">=> "Most Active Club"</div>
-							<div class="about-answer" style="padding-left: 80px;">organization:&ensp; "Association of Computer Engineers",</div>
-							<div class="about-answer" style="padding-left: 80px;" >role: &ensp;"Outreach Chair",</div>
-							<p class="about-answer" style="padding-left: 80px;">startDate: &ensp;"April 2019",</p>
-							<div class="about-question">> Adam.objective</div>
-							<p class="about-answer">=> "Summer 2021 internship"</p>
-							<div class="about-question">> Adam.workingOn</div>
-							<p class="about-answer">=> "Evoloving chatbot and MERN car reviewer project"</p>
+				<h3 style="font-weight: bolder; text-align: center; margin-bottom: 20px; font-size: 16px;letter-spacing: 1px; color:#ff5148; ">ABOUT</h3>
+				<h2 style="font-weight: bolder; text-align: center; margin-bottom: 40px; font-size: 26px;">Let me introduce myself</h2>
+				<div class="row" style="margin-bottom: 7%; color:#FEFEFA;">
+					<div class="col-md-4 about-image-container">
+						<img class="about-image" src="./images/CO.PNG">
+					</div>
+					<!-- <div class="col-md-1 col-sm-12"></div> -->
+					<div class="col-md-8 about-text">
+						<p style="font-size: 18px;" id="at">I'm a UF class of 2022 undergraduate majoring in Computer Science. 
+							My interests lie in learning about, contributing to, and creating new technologies that solve real world problems. 
+							For example, right now I am working on multiple personal projects involving AWS, Mapbox API, Wikidata, and more. </p>
+						<!-- learning about, contributing to, and creating new technologies -->
+					</div>
+					<div class="col-md-1 col-sm-12"></div>
+
+				</div>
+				<div class="row" style="margin-bottom: 5%; color:#FEFEFA;" id="cont">
+					<div class="col-md-1 col-sm-12"></div>
+					<div class="col-md-5 col-sm-12">
+						<p class="about-title">PROFILE</p>
+						<p style="margin-left: 10%; margin-right: 10%; line-height: 2rem;">Currently I am seeking an internship for the summer of 2021. If you think I'm a good fit, please contact me at one of the links below</p>
+					</div>
+					<div class="col-md-5 col-sm-12" >
+						<p class="about-title" >HOBBIES</p>
+						<p style="margin-left: 10%; margin-right: 10%; line-height: 2rem;">When I'm not working on school or a personal project I enjoy running, reading, working out, magic, or even playing chess (thank you Queen's Gambit)</p>
+					</div>
+					<div class="col-md-1 col-sm-12"></div>
+				</div>
+				<!-- <div class="row"></div> -->
+				<div class="row" style="color:#FEFEFA;">
+					<div class="col-md-1 col-sm-12"></div>
+					<div class="col-md-5 col-sm-12">
+						<p class="about-title" >CONTACT</p>
+						<!-- <p style="margin-left: 10%; margin-right: 10%;"> If you think I'm a good fit, please contact me at the email below</p> -->
+						<p style="margin-left: 10%; margin-right: 10%;display: flex; flex-direction: column;">
+							<!-- <i class="fa fa-envelope contact-icon text-muted"></i>  -->
+							<a class="about-contact" href="mailto: aconybear22@gmail.com">
+								<i class="fa fa-envelope contact-icon text-muted"></i>
+								<span>aconybear22@gmail.com</span>
+								
+							</a>
+							<a class="about-contact" href="http://www.linkedin.com/in/AdamConybear/">
+								<i class="fa fa-linkedin contact-icon text-muted"></i> 
+								<span>AdamConybear</span>
+							</a>
+						</p>
+					</div>
+					<div class="col-md-5 col-sm-12">
+						<p class="about-title">SKILLS/TOOLS</p>
+						<div style="display: flex; flex-direction: row;">
+							<ul style="margin-left: 10%; margin-right: 10%;">
+								<li>JavaScript</li>
+								<li>Java</li>
+								<li>C++</li>
+								<li>HTML/CSS</li>
+							</ul>
+							<ul style="margin-left: 10%; margin-right: 10%;">
+								<li>React</li>
+								<li>Express</li>
+								<li>Mongo</li>
+								<li>React Native</li>
+							</ul>
 						</div>
 					</div>
+					<div class="col-md-1 col-sm-12"></div>
+				</div>
+				<div class="resume-button" onclick="location.href='./ConybearAdam_Resume.pdf';">
+					<span>View Resume</span>
 				</div>
 			</div>
 			
 			<!-- Projects -->
 			<div class="projects" id="proj">
-				<h2 style="font-weight: bolder;">Projects</h2>
-				<div class="row">
-
-					<div class="col-md-4 col-sm-12 mt-4">
-						<div class="card project-card">
-							<div class="card-img-block">
-								<img class="card-img-top" src="./images/trello_students.png" alt="Card image cap">
+				<h3 style="font-weight: bold; text-align: center; margin-bottom: 20px; font-size: 16px;letter-spacing: 1px; color:#ff5148;">PROJECTS</h3>
+				<h2 style="font-weight: bolder; color: #FEFEFA;">Some things I've worked on</h2>
+				<!-- <img class="lazyload" data-src="./images/trello_students.png" src="./images/trello_students.png" width="550" height="350" /> -->
+				<div class="project-container">
+					<!-- Gator Rater -->
+					<div class="single-project">
+						<div class="web-indvProject" id="web">
+							<div class="web-proj-wrap">	
+								<!-- <div class="project-image">
+									<img class = "web-proj-image" style="margin-right: auto;" src="./images/trello_students.png" alt="">
+								</div>	 -->
+								<img class = "web-proj-image" style="margin-right: auto;" src="./images/gatorRater.png" alt="">				
+								<div class = "web-project-contents-R">
+									<p class="web-project-title" style="margin-left: auto; margin-right: 10px;">Gator Rater</p>
+									<p class="web-project-stack" style="margin-left: auto;margin-right: 10px;">MERN stack</p>
+									<div class="web-project-desc">
+										<p class="web-project-text">Responsive fullstack web application that helps UF students determine how stressful their classes will be</p>
+									</div>
+									<div class="web-project-icons projectIcons" style="margin-left: auto; margin-right: 10px;">
+										<a href="https://github.com/AdamConybear/CEN3031_Project"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://lit-anchorage-94851.herokuapp.com/#/"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
 							</div>
-							<div class="card-body pt-0">
-							<h5 class="card-title">Trello Clone for Students</h5>
-							<p class="card-text">Recreated Trello to optimize students' organization through ical files and more</p>
-							<p style="font-size: 12px; text-align: center;">React &#183 Redux</p>
-							<div style="text-align: center;">
-								<a href="https://github.com/AdamConybear/trelloClone-students"><button type="button" class="btn btn-outline-dark btn-sm">View Code</button></a> &nbsp;
-                                <a href="https://adamconybear.github.io/trelloClone-students/"><button type="button" class="btn btn-outline-dark btn-sm">View Project</button></a>
-							</div>
-						  </div>
 						</div>
+	
+						<div class="mobile-indvProject" id="mobile">
+							<div class = "mobile-proj-wrap">
+								<img class = "mobile-proj-image lozad" data-src="./images/gatorRater.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/>
+								<div class="mobile-proj-desc">
+									<p class="mobile-img-desc mobile-projectTitle">Gator Rater</p>
+									<p class="mobile-img-desc mobile-proj-info">Responsive fullstack web application that helps UF students determine how stressful their classes will be</p>
+									<p class="mobile-img-desc mobile-proj-stack">MERN stack</p>
+									<div class="mobile-img-desc projectIcons">
+										<a href="https://github.com/AdamConybear/CEN3031_Project"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://lit-anchorage-94851.herokuapp.com/#/"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>	
 					</div>
-
-					<div class="col-md-4 col-sm-12 mt-4">
-						<div class="card project-card">
-							<div class="card-img-block">
-								<img class="card-img-top" src="./images/soccer.jpg" alt="Card image cap">
+					<!-- Trello -->
+					<div class="single-project">
+						<div class="web-indvProject" id="web">
+							<div class="web-proj-wrap">	
+								<img class = "web-proj-image" style="margin-left: auto;" src="./images/trello_students.png" alt="">				
+								<div class = "web-project-contents-L">
+									<p class="web-project-title" style="margin-right: auto; margin-left: 10px;">Trello Clone for Students</p>
+									<p class="web-project-stack" style="margin-right: auto; margin-left: 10px;">React &#183 Redux</p>
+									<div class="web-project-desc">
+										<p class="web-project-text">Recreated Trello to optimize students' organization through ical files, date selectors, and more</p>
+									</div>
+									<div class="web-project-icons projectIcons" style="margin-right: auto; margin-left: 10px;">
+										<a href="https://github.com/AdamConybear/trelloClone-students"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://adamconybear.github.io/trelloClone-students/"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
 							</div>
-							<div class="card-body pt-0">
-							<h5 class="card-title">Soccer Visulaizer</h5>
-							<p class="card-text">Visualizes specific sequences from a soccer game by reading in over 150,000 data elements</p>
-							<p style="font-size: 12px; text-align: center;">C++ &#183 SFML</p>
-							<div style="text-align: center;">
-								<a href="https://github.com/AdamConybear/Soccer-Visualization"><button type="button" class="btn btn-outline-dark btn-sm">View Code</button></a> &nbsp;
-                                <a href="https://drive.google.com/file/d/12suhma2TIx7lcts61s73JYStQwF60jHX/view?usp=sharing"><button type="button" class="btn btn-outline-dark btn-sm">View Project</button></a>
-							</div>
-						  </div>
 						</div>
+	
+						<div class="mobile-indvProject" id="mobile">
+							<div class = "mobile-proj-wrap">
+								<img class = "mobile-proj-image lozad" data-src="./images/trello_students.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/>
+								<div class="mobile-proj-desc">
+									<p class="mobile-img-desc mobile-projectTitle">Trello Clone for Students</p>
+									<p class="mobile-img-desc mobile-proj-info">Recreated Trello to optimize students' organization through ical files, date selectors, and more</p>
+									<p class="mobile-img-desc mobile-proj-stack">React &#183 Redux</p>
+									<div class="mobile-img-desc projectIcons">
+										<a href="https://github.com/AdamConybear/trelloClone-students"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://adamconybear.github.io/trelloClone-students/"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>			
 					</div>
-					
-					<div class="col-md-4 col-sm-12 mt-4">
-						<div class="card project-card">
-							<div class="card-img-block">
-								<img class="card-img-top" src="./images/confided_image.JPG" alt="Card image cap">
+					<!-- Soccer visualization -->
+					<div class="single-project">
+						<div class="web-indvProject" id="web">
+							<div class="web-proj-wrap">	
+								<!-- <div class="project-image">
+									<img class = "web-proj-image" style="margin-right: auto;" src="./images/trello_students.png" alt="">
+								</div>	 -->
+								<img class = "web-proj-image" style="margin-right: auto;" src="./images/soccer.jpg" alt="">				
+								<div class = "web-project-contents-R">
+									<p class="web-project-title" style="margin-left: auto; margin-right: 10px;">Soccer Visualizer</p>
+									<p class="web-project-stack" style="margin-left: auto;margin-right: 10px;">C++ &#183 SFML</p>
+									<div class="web-project-desc">
+										<p class="web-project-text">Visualizes specific sequences from a soccer game by reading in over 150,000 data elements</p>
+									</div>
+									<div class="web-project-icons projectIcons" style="margin-left: auto; margin-right: 10px;">
+										<a href="https://github.com/AdamConybear/Soccer-Visualization"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://drive.google.com/file/d/12suhma2TIx7lcts61s73JYStQwF60jHX/view?usp=sharing"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
 							</div>
-							<div class="card-body pt-0">
-							<h5 class="card-title">Confided</h5>
-							<p class="card-text">Peer-to-Peer matching app to talk about mental illness in a safe space</p>
-							<p style="font-size: 12px; text-align: center;">JS &#183 ReactNative</p>
-							<div class= "project-icons">
-								<!-- <a href="https://github.com/AdamConybear/SwampHacks20"><i class="fa fa-github"></i></a> &nbsp;
-								<a href="https://drive.google.com/file/d/1msBsfsAu3Pj3VNZUMQGx9E6mM-HQy5zA/view?usp=sharing"><i class="fa fa-external-link indv"></i></a> -->
-								<a href="https://github.com/AdamConybear/SwampHacks20"><button type="button" class="btn btn-outline-dark btn-sm">View Code</button></a> &nbsp;
-								<a href="https://drive.google.com/file/d/1msBsfsAu3Pj3VNZUMQGx9E6mM-HQy5zA/view?usp=sharing"><button type="button" class="btn btn-outline-dark btn-sm">View Project</button></a>
-							</div>
-						  </div>
 						</div>
+	
+						<div class="mobile-indvProject" id="mobile">
+							<div class = "mobile-proj-wrap">
+								<img class = "mobile-proj-image lozad" data-src="./images/soccer.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/>
+								<div class="mobile-proj-desc">
+									<p class="mobile-img-desc mobile-projectTitle">Soccer Visualizer</p>
+									<p class="mobile-img-desc mobile-proj-info">Visualizes specific sequences from a soccer game by reading in over 150,000 data elements</p>
+									<p class="mobile-img-desc mobile-proj-stack">C++ &#183 SFML</p>
+									<div class="mobile-img-desc projectIcons">
+										<a href="https://github.com/AdamConybear/Soccer-Visualization"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://drive.google.com/file/d/12suhma2TIx7lcts61s73JYStQwF60jHX/view?usp=sharing"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>	
 					</div>
-					
-					<div class="col-md-4 col-sm-12 mt-4">
-						<div class="card project-card">
-							<div class="card-img-block">
-								<img class="card-img-top" src="./images/sort_image.jpg" alt="Card image cap">
+					<!-- Confided -->
+					<div class="single-project">
+						<div class="web-indvProject" id="web">
+							<div class="web-proj-wrap">	
+								<img class = "web-proj-image" style="margin-left: auto;" src="./images/confided_image.JPG" alt="">				
+								<div class = "web-project-contents-L">
+									<p class="web-project-title" style="margin-right: auto; margin-left: 10px;">Confided</p>
+									<p class="web-project-stack" style="margin-right: auto; margin-left: 10px;">JS &#183 ReactNative</p>
+									<div class="web-project-desc">
+										<p class="web-project-text">Peer-to-Peer matching app to talk about mental illness in a safe space</p>
+									</div>
+									<div class="web-project-icons projectIcons" style="margin-right: auto; margin-left: 10px;">
+										<a href="https://github.com/AdamConybear/SwampHacks20"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://drive.google.com/file/d/1msBsfsAu3Pj3VNZUMQGx9E6mM-HQy5zA/view?usp=sharing"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
 							</div>
-							<div class="card-body pt-0">
-							<h5 class="card-title">Sorting Algorithm Software</h5>
-							<p class="card-text">Visually allows beginners to grasp concepts of multiple sorting algorithms</p>
-							<p style="font-size: 12px; text-align: center;">JS &#183 P5</p>
-							<div style="text-align: center;">
-								<a href="https://github.com/AdamConybear/Sorting-Algorithm-Visualizer"><button type="button" class="btn btn-outline-dark btn-sm">View Code</button></a> &nbsp;
-								<a href="./live/SortingVisualizer/index.html"><button type="button" class="btn btn-outline-dark btn-sm">View Project</button></a>
-							</div>
-						  </div>
 						</div>
+	
+						<div class="mobile-indvProject" id="mobile">
+							<div class = "mobile-proj-wrap">
+								<img class = "mobile-proj-image lozad" data-src="./images/confided_image.JPG" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/>
+								<div class="mobile-proj-desc">
+									<p class="mobile-img-desc mobile-projectTitle">Confided</p>
+									<p class="mobile-img-desc mobile-proj-info">Peer-to-Peer matching app to talk about mental illness in a safe space</p>
+									<p class="mobile-img-desc mobile-proj-stack">JS &#183 ReactNative</p>
+									<div class="mobile-img-desc projectIcons">
+										<a href="https://github.com/AdamConybear/SwampHacks20"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://drive.google.com/file/d/1msBsfsAu3Pj3VNZUMQGx9E6mM-HQy5zA/view?usp=sharing"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>			
 					</div>
-		
-					<div class="col-md-4 col-sm-12 mt-4">
-						<div class="card project-card">
-							<div class="card-img-block">
-								<img class="card-img-top" src="./images/WMC_image.JPG" alt="Card image cap">
+					<!-- Sorting -->
+					<div class="single-project">
+						<div class="web-indvProject" id="web">
+							<div class="web-proj-wrap">	
+								<img class = "web-proj-image" style="margin-right: auto;" src="./images/sort_image.jpg" alt="">				
+								<div class = "web-project-contents-R">
+									<p class="web-project-title" style="margin-left: auto; margin-right: 10px;">Sorting Algorithm Visualizer</p>
+									<p class="web-project-stack" style="margin-left: auto; margin-right: 10px;">JS &#183 P5</p>
+									<div class="web-project-desc">
+										<p class="web-project-text">Visually allows beginners to grasp concepts of multiple sorting algorithms</p>
+									</div>
+									<div class="web-project-icons projectIcons" style="margin-left: auto; margin-right: 10px;">
+										<a href="https://github.com/AdamConybear/Sorting-Algorithm-Visualizer"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="./live/SortingVisualizer/index.html"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
 							</div>
-							<div class="card-body pt-0">
-							<h5 class="card-title">World Memory Championship</h5>
-							<p class="card-text">Mobile app that allows competitors in WMC to train anywhere and anytime</p>
-							<p style="font-size: 12px; text-align: center;">JS &#183 ReactNative</p>
-							<div style="text-align: center;">
-								<a href="https://github.com/AdamConybear/Memory-Trainer-app"><button type="button" class="btn btn-outline-dark btn-sm">View Code</button></a> &nbsp;
-                                <a href="https://drive.google.com/file/d/14xNVl1pcIQ1PAiTkWa10izuwJCd5o4oz/view?usp=sharing"><button type="button" class="btn btn-outline-dark btn-sm">View Project</button></a>
-							</div>
-						  </div>
 						</div>
+	
+						<div class="mobile-indvProject" id="mobile">
+							<div class = "mobile-proj-wrap">
+								<img class = "mobile-proj-image lozad" data-src="./images/sort_image.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/>
+								<div class="mobile-proj-desc">
+									<p class="mobile-img-desc mobile-projectTitle">Sorting Algorithm Visualizer</p>
+									<p class="mobile-img-desc mobile-proj-info">Visually allows beginners to grasp concepts of multiple sorting algorithms</p>
+									<p class="mobile-img-desc mobile-proj-stack">JS &#183 P5</p>
+									<div class="mobile-img-desc projectIcons">
+										<a href="https://github.com/AdamConybear/Sorting-Algorithm-Visualizer"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="./live/SortingVisualizer/index.html"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+					<!-- WMC -->
+					<div class="single-project">
+						<div class="web-indvProject" id="web">
+							<div class="web-proj-wrap">	
+								<img class = "web-proj-image" style="margin-left: auto;" src="./images/WMC_image.JPG" alt="">				
+								<div class = "web-project-contents-L">
+									<p class="web-project-title" style="margin-right: auto; margin-left: 10px;">World Memory Championship</p>
+									<p class="web-project-stack" style="margin-right: auto; margin-left: 10px;">JS &#183 ReactNative</p>
+									<div class="web-project-desc">
+										<p class="web-project-text">Mobile app that allows competitors in WMC to train anywhere and anytime</p>
+									</div>
+									<div class="web-project-icons projectIcons" style="margin-right: auto; margin-left: 10px;">
+										<a href="https://github.com/AdamConybear/Memory-Trainer-app"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://drive.google.com/file/d/14xNVl1pcIQ1PAiTkWa10izuwJCd5o4oz/view?usp=sharing"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="mobile-indvProject" id="mobile">
+							<div class = "mobile-proj-wrap">
+								<img class = "mobile-proj-image lozad" data-src="./images/WMC_image.JPG" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA"/>
+								<div class="mobile-proj-desc">
+									<p class="mobile-img-desc mobile-projectTitle">World Memory Championship</p>
+									<p class="mobile-img-desc mobile-proj-info">Mobile app that allows competitors in WMC to train anywhere and anytime</p>
+									<p class="mobile-img-desc mobile-proj-stack">JS &#183 ReactNative</p>
+									<div class="mobile-img-desc projectIcons">
+										<a href="https://github.com/AdamConybear/Memory-Trainer-app"><i class="fa fa-github"></i></a> &nbsp;
+										<a href="https://drive.google.com/file/d/14xNVl1pcIQ1PAiTkWa10izuwJCd5o4oz/view?usp=sharing"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>			
 					</div>
 				</div>
-		
-				
-				
+
 			</div>
 			<!-- Contact -->
-			<div class="contact" id="cont">
+			<!-- <div class="contact" id="cont">
 				<h2 style="font-weight: bold;">Contact</h2>
 				<p><i class="fa fa-envelope contact-icon"></i> <a href="mailto: aconybear22@gmail.com">aconybear22@gmail.com</a></p>
-			</div>
+			</div> -->
+			<!-- <div class="row test-intro">
+				<div class="testies" id="aboutWeb">
+					<img class="test-image img-responsive" src="./images/temp_background.jpg">
+					<p style="font-size: 18px;">I'm a UF class of 2022 undergraduate majoring in Computer Science. My primary interest lies in learning about and creating new technologies that solve real world problems.</p>
+				</div>
+				<div id="aboutMobile" style="display: flex; flex-direction: column; margin-right: auto; margin-left: auto; justify-content: center; align-items: center;">
+					<img class="test-image img-responsive" src="./images/temp_background.jpg">
+					<p style="font-size: 18px;">I'm a UF class of 2022 undergraduate majoring in Computer Science. My primary interest lies in learning about and creating new technologies that solve real world problems.</p>
+				</div>
+				
+			
+			</div> -->
+
 		</div>
 	</div>
-	<!-- Test Space -->
-	<!-- <a class="initials" href=""><img src="./images/Adam_initials.png" alt=""></a> -->
-
 
 	<!-- Footer -->
-	<nav class="navbar navbar-expand-lg navbar-light footer">
+	<footer class="footer">
 		<div class="container">
-			<div class="col-12">
-				<!-- <p>Code & Design by Adam</p>  -->
-				<a class="initials" href=""><img src="./images/Adam_initials.png" alt=""></a>
-			</div>
+			<span class="text-muted">Code & Design by Adam</span>
+			<!-- <a class="initials" href=""><img src="./images/Adam_initials.png" alt=""></a> -->
 		</div>
-	</nav>
-	
+	</footer>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -243,6 +493,33 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	
+	<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<script type="text/javascript">
+		var observer = lozad('.lozad', {
+        threshold: 0.2,
+        enableAutoReload: false,
+
+    	})
+
+		observer.observe();
+	</script>	
+	<!-- active nav bar class -->
+	<script type="text/javascript">
+		var iconContainer = document.getElementById("nav-bar-nav");
+
+		// Get all buttons with class="btn" inside the container
+		var icons = iconContainer.getElementsByClassName("icon-nav");
+
+		// Loop through the buttons and add the active class to the current/clicked button
+		for (var i = 0; i < icons.length; i++) {
+			icons[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		});
+		}
+	</script>
+
 	<!-- Typing animation script -->
 	<script src="js/typed.js"></script>
 	<script>
@@ -263,6 +540,15 @@
 			}
 		});
 	</script>
+	<script>
+		$(document).ready(function () {
+			$('.hamburger').on('click', function () {
+				$('.animated-hamburger').toggleClass('open');
+			});
+		});
+	</script>
+
+
 	<div id="chatbot">
 		<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 		<df-messenger
