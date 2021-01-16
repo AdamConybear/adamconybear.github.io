@@ -264,6 +264,7 @@ body  {
     /* color: #CFFFB3; */
     color: #86c232;
     font-weight: 100;
+    margin-top: -1%;
     animation: blink 0.9s infinite;
 }
   
