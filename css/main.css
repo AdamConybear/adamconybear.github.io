@@ -33,6 +33,11 @@ body  {
     background: none;
 }
 
+.navbar-brand{
+    padding: 0;
+    margin-left: 5px;
+}
+
 .custom-nav-item{
     /* margin-right: 10px; */
     width: 90px;
@@ -67,6 +72,36 @@ body  {
         display:flex;
     }
 } 
+
+/* @media screen and (min-width: 768px) {
+
+    #nav_content{
+        
+    }
+
+} */
+
+@media screen and (max-width: 767px) {
+    #nav_content {
+        position: absolute;
+        right: 20px;
+        top: 48px;
+        z-index: 1;
+    }
+}
+
+/* #nav_content{
+    position: absolute;
+    right: 20px;
+    top: 48px;
+    z-index: 1;
+} */
+/* .testnav{
+    position: absolute;
+    right: 20px;
+    top: 48px;
+    z-index: 1;
+} */
 
 #nav-bar{
     background: #181818;
