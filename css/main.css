@@ -101,7 +101,8 @@ body  {
     color: #909096;
 }
 #nav-bar ul li a:hover{
-    color:#ff5148;
+    /* color:#ff5148; */
+    color:#094e00;
     transform: scale(1.15);
     transition-duration: 0.2s;
 }
@@ -179,9 +180,11 @@ body  {
 
 .letter:hover{
     /* color:#ff6961; */
-    color:#ff5148;
+    /* color:#ff5148; */
+    color:#094e00;
+    
     cursor: default;
-    animation-name: rubberBand;
+    animation-name: rubberBand
 }
 
 @keyframes rubberBand {
@@ -327,6 +330,7 @@ body  {
 .about-contact{
     color:#FEFEFA;
     text-decoration: none;
+    font-size: 15px;
 }
 .about-contact:hover {
     transition: color .5s ease-in-out;
@@ -685,7 +689,7 @@ body  {
 
 
 .projectIcons {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 10px;
     text-align: center;
 }
@@ -889,4 +893,114 @@ showLazyImg {
     to { 
         opacity: 1; 
     } 
+}
+
+/* .mfp-hide{
+    display: none !important;
+} */
+.newpop{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    /* width: auto; */
+    /* height: auto; */
+    max-width: 595px;
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+button.mfp-close{
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    border: 0;
+    display: block;
+    outline: 0;
+    padding: 0;
+    z-index: 1046;
+    box-shadow: none;
+}
+
+.mfp-close{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    line-height: 44px;
+    position: absolute;
+    /* top: -10px; */
+
+}
+video{
+    outline: none;
+}
+
+.pop-video{
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+/* .newpoptest{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 595px;
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;   
+
+} */
+
+/**
+* Simple fade transition,
+*/
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+@media screen and (min-width: 997px) {
+
+    .mfp-close {
+        right: -100px;
+        /* top: -70px; */
+        
+    }
+}
+
+@media screen and (max-width: 997px) {
+    
+    .mfp-close {
+        right: 10px;
+        /* top: -28px; */
+    }
 }
