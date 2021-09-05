@@ -438,7 +438,7 @@ body  {
     align-items: center;
     margin-right: auto;
     margin-bottom: auto;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     line-height: 2rem;
 }
 
@@ -698,8 +698,22 @@ body  {
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 475px;
-    max-height: 275px;
+    /* max-width: 475px; */
+    width: 475px;
+    height:290px;
+    /* max-height: 375px; */
+    /* min-height: 175px; */
+}
+
+@media screen and (max-width: 425px) {
+    .mobile-indvProject{
+        height:250px
+    }
+}
+@media screen and (max-width: 370px) {
+    .mobile-indvProject{
+        height:230px
+    }
 }
 
 @media screen and (min-width: 997px) {
